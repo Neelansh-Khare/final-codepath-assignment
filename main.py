@@ -17,7 +17,7 @@ def main():
 
     scheduler = Scheduler()
     all_tasks = scheduler.get_all_tasks(owner)
-    sorted_tasks = scheduler.sort_by_time(all_tasks)
+    sorted_tasks = scheduler.sort_by_time_and_priority(all_tasks)
 
     print(f"--- Today's Schedule for {owner.name} ---")
     for task in sorted_tasks:
